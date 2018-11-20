@@ -1,12 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index-test</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Liu Guang Tea House</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            font-family: 微軟正黑體;
+        }
+
+        /* 導覽列 */
+        #header {
+            background: rgba(255, 255, 255, 0.4);
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+        }
+
+        #logosection {
+            width: 380px;
+            float: left;
+        }
+
+        #logo {
+            background-image: url(img/05_header/logo.png);
+            background-size: cover;
+            background-position: center left;
+            width: 170px;
+            height: 100px;
+            float: left;
+        }
+
+        #store_name {
+            float: left;
+            font-size: 35pt;
+            font-weight: bold;
+            padding-top: 15px;
+            padding-left: 18px;
+            color: #051E08;
+        }
+
+        .nav {
+            height: 100px;
+            padding-left: 40px;
+        }
+
+        .nav-item {
+            padding: 19px 10px;
+            font-size: 22pt;
+
+        }
+
+        .nav-link {
+            color: rgb(12, 66, 18);
+        }
+
+        /* 整體內容 */
+        .text_title {
+            padding-top: 750px;
+            text-align: center;
+            font-size: 22pt;
+            font-weight: bold;
+            color: rgb(40, 92, 160);
+            text-shadow: rgb(255, 255, 255) 0 0 0.2em;
+        }
+        .arrow {
+            background-image: url(img/01_about/05_arrow.png);
+            height: 80px;
+            width: 100px;
+            background-position: bottom;
+        }
+        .bg_down {
+            background-image: url(img/01_about/03_content_bg.png);
+            background-position: center;
+            background-size: cover;
+            height: 1000px;
+        }
+
+        /* 流光細語 */
+        #about_bg {
+            background-image: url(img/01_about/01_about_bg.jpg);
+        }
+        #about_bg_up {
+            background-image: url(img/01_about/02_flower.png);
+            background-position: center;
+            background-size: 80%;
+            background-attachment: fixed;
+        }
+        #about_content{
+            padding-top: 100px;
+            padding-left: 280px;
+        }
+        .about_contentSection{
+            height: 280px;
+            padding-bottom: 80px;
+            
+        }
+        .about_img01{
+            background-image: url(img/01_about/04_frame.png);
+            width: 200px;
+            height: 200px;
+            background-position: center left;
+            background-size: 100%;
+            float: left;
+        }
+        .img01_title{
+            font-size: 22pt;
+            text-align: center;
+            padding-top: 60px;
+            color: rgb(21, 65, 26)
+        }
+        .title02{
+            padding-top: 80px;
+        }
+        .text01{
+            float: left;
+            font-size: 16pt;
+            padding-top: 10px;
+            padding-left: 120px;
+        }
+
+
+        /* 茶話趣活 */
+        #event_bg{
+            background-image: url(img/02_event/01_event_bg.jpg);
+        }
+        #event_bg_up{
+            background-image: url(img/02_event/02_event_thing.png);
+            background-position: center;
+            background-size: 80%;
+            background-attachment: fixed;
+        }
+        /* 品茶味食 */
+        #food_bg {
+            background-image: url(img/03_food/01_food_bg.jpg);
+        }
+        #food_bg_up{
+            background-image: url(img/03_food/02_food_tea.png);
+            background-position: center;
+            background-size: 80%;
+            background-attachment: fixed;
+        }
+        /* 連絡我們 */
+        #contact_bg {
+            background-image: url(img/04_contact/01_contact_bg.jpg);
+        }
+        #contact_bg_up{
+            background-image: url(img/04_contact/02_contact_note.png);
+            background-position: center;
+            background-size: 80%;
+            background-attachment: fixed;
+        }
+        
+    </style>
 </head>
+
 <body>
-    index
+    <div id="all">
+        <!-- 導覽列 -->
+        <div id="header">
+            <div class="container">
+                <div id="logosection">
+                    <div id="logo"></div>
+                    <p id="store_name">流光茶館</p>
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item col-lg-3">
+                        <a class="nav-link" href="#about">流光細語</a>
+                    </li>
+                    <li class="nav-item col-lg-3">
+                        <a class="nav-link" href="#">茶話趣活</a>
+                    </li>
+                    <li class="nav-item col-lg-3">
+                        <a class="nav-link" href="#">品茶味食</a>
+                    </li>
+                    <li class="nav-item col-lg-3">
+                        <a class="nav-link" href="#">連絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 流光細語 -->
+        <div id="about">
+            <div id="about_bg">
+                <div id="about_bg_up" class="container">
+                    <p class="text_title">流光細語</p>
+                    <div class="arrow container"></div>
+                </div>
+            </div>
+            <div class="bg_down">
+                <div id="about_content" class="container">
+                    <div class="about_contentSection">
+                        <div class="about_img01">
+                            <p class="img01_title">命名<br>
+                               由來
+                            </p>
+                        </div>
+                        <div class="text01" >
+                            <p>時間匆匆如流光，</p>
+                            <p>庸碌的日子裡，</p>
+                            <p>偷得浮生半日閒的吃喝話家常，</p>
+                            <p>總是幸福無比。</p>
+                        </div>
+                    </div>
+                    <div class="about_contentSection">
+                        <div class="about_img01">
+                            <p class="img01_title title02">使命</p>
+                        </div>
+                        <div class="text01">
+                            <p>人情疏離的時代，</p>
+                            <p>可望有個輕鬆閒趣的地方，</p>
+                            <p>在可動可靜的茶館中，</p>
+                            <p>找回人與人之間的溫情感。</p>
+                        </div>
+                    </div>
+                    <div class="about_contentSection">
+                        <div class="about_img01">
+                            <p class="img01_title title02">願景</p>
+                        </div>
+                        <div class="text01">
+                            <p>今朝能相聚在一起談天，</p>
+                            <p>都是得來不易的緣分，</p>
+                            <p>希望能維持這緣情，</p>
+                            <p>把這人情的溫度傳遍每個角落。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 茶話趣活 -->
+        <div id="event">
+            <div id="event_bg">
+                    <div id="event_bg_up" class="container">
+                    <p class="text_title">茶話趣活</p>
+                    <div class="arrow container"></div>
+                </div>
+            </div>
+            <div class="bg_down">
+                <p>jjuyttg</p>
+            </div>
+        </div>
+
+        <!-- 品茶味食 -->
+        <div id="food">
+            <div id="food_bg">
+                    <div id="food_bg_up" class="container">
+                    <p class="text_title">品茶味食</p>
+                    <div class="arrow container"></div>
+                </div>
+            </div>
+            <div class="bg_down">
+                <p>jjuyttg</p>
+            </div>
+        </div>
+
+        <!-- 連絡我們 -->
+        <div id="contact">
+            <div id="contact_bg">
+                    <div id="contact_bg_up" class="container">
+                    <p class="text_title">連絡我們</p>
+                    <div class="arrow container"></div>
+                </div>
+            </div>
+            <div class="bg_down">
+                <p>jjuyttg</p>
+            </div>
+        </div>
+
+        <!-- 頁尾 -->
+        <div id="footer"></div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
