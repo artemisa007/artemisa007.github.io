@@ -72,12 +72,14 @@
             color: rgb(40, 92, 160);
             text-shadow: rgb(255, 255, 255) 0 0 0.2em;
         }
+
         .arrow {
             background-image: url(img/01_about/05_arrow.png);
             height: 80px;
             width: 100px;
             background-position: bottom;
         }
+
         .bg_down {
             background-image: url(img/01_about/03_content_bg.png);
             background-position: center;
@@ -89,22 +91,26 @@
         #about_bg {
             background-image: url(img/01_about/01_about_bg.jpg);
         }
+
         #about_bg_up {
             background-image: url(img/01_about/02_flower.png);
             background-position: center;
             background-size: 80%;
             background-attachment: fixed;
         }
-        #about_content{
+
+        #about_content {
             padding-top: 100px;
             padding-left: 280px;
         }
-        .about_contentSection{
+
+        .about_contentSection {
             height: 280px;
             padding-bottom: 80px;
-            
+
         }
-        .about_img01{
+
+        .about_img01 {
             background-image: url(img/01_about/04_frame.png);
             width: 200px;
             height: 200px;
@@ -112,16 +118,19 @@
             background-size: 100%;
             float: left;
         }
-        .img01_title{
+
+        .img01_title {
             font-size: 22pt;
             text-align: center;
             padding-top: 60px;
             color: rgb(21, 65, 26)
         }
-        .title02{
+
+        .title02 {
             padding-top: 80px;
         }
-        .text01{
+
+        .text01 {
             float: left;
             font-size: 16pt;
             padding-top: 10px;
@@ -130,38 +139,47 @@
 
 
         /* 茶話趣活 */
-        #event_bg{
+        #event_bg {
             background-image: url(img/02_event/01_event_bg.jpg);
         }
-        #event_bg_up{
+
+        #event_bg_up {
             background-image: url(img/02_event/02_event_thing.png);
             background-position: center;
             background-size: 80%;
             background-attachment: fixed;
         }
+
         /* 品茶味食 */
         #food_bg {
             background-image: url(img/03_food/01_food_bg.jpg);
         }
-        #food_bg_up{
+
+        #food_bg_up {
             background-image: url(img/03_food/02_food_tea.png);
             background-position: center;
             background-size: 80%;
             background-attachment: fixed;
         }
+
+        
+
+
         /* 連絡我們 */
         #contact_bg {
             background-image: url(img/04_contact/01_contact_bg.jpg);
         }
-        #contact_bg_up{
+
+        #contact_bg_up {
             background-image: url(img/04_contact/02_contact_note.png);
             background-position: center;
             background-size: 80%;
             background-attachment: fixed;
         }
-        
     </style>
 </head>
+
+
 
 <body>
     <div id="all">
@@ -177,13 +195,13 @@
                         <a class="nav-link" href="#about">流光細語</a>
                     </li>
                     <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#">茶話趣活</a>
+                        <a class="nav-link" href="#event">茶話趣活</a>
                     </li>
                     <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#">品茶味食</a>
+                        <a class="nav-link" href="#food">品茶味食</a>
                     </li>
                     <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#">連絡我們</a>
+                        <a class="nav-link" href="#contact">連絡我們</a>
                     </li>
                 </ul>
             </div>
@@ -202,10 +220,10 @@
                     <div class="about_contentSection">
                         <div class="about_img01">
                             <p class="img01_title">命名<br>
-                               由來
+                                由來
                             </p>
                         </div>
-                        <div class="text01" >
+                        <div class="text01">
                             <p>時間匆匆如流光，</p>
                             <p>庸碌的日子裡，</p>
                             <p>偷得浮生半日閒的吃喝話家常，</p>
@@ -241,7 +259,7 @@
         <!-- 茶話趣活 -->
         <div id="event">
             <div id="event_bg">
-                    <div id="event_bg_up" class="container">
+                <div id="event_bg_up" class="container">
                     <p class="text_title">茶話趣活</p>
                     <div class="arrow container"></div>
                 </div>
@@ -254,20 +272,40 @@
         <!-- 品茶味食 -->
         <div id="food">
             <div id="food_bg">
-                    <div id="food_bg_up" class="container">
+                <div id="food_bg_up" class="container">
                     <p class="text_title">品茶味食</p>
                     <div class="arrow container"></div>
                 </div>
             </div>
             <div class="bg_down">
-                <p>jjuyttg</p>
+                <div id="foodselect" class="container">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item col-lg-4">
+                            <a class="nav-link active food-title" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item col-lg-4">
+                            <a class="nav-link food-title" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item col-lg-4">
+                            <a class="nav-link food-title" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- 連絡我們 -->
         <div id="contact">
             <div id="contact_bg">
-                    <div id="contact_bg_up" class="container">
+                <div id="contact_bg_up" class="container">
                     <p class="text_title">連絡我們</p>
                     <div class="arrow container"></div>
                 </div>
