@@ -162,7 +162,48 @@
             background-attachment: fixed;
         }
 
-        
+        #foodselect {
+            padding-top: 150px;
+        }
+
+        .food-tab {
+            text-align: center;
+        }
+
+        /* 按下去會變色↓ */
+        .nav-tabs .nav-link.active {
+            background-color: rgb(144, 118, 110);
+            color: white;
+        }
+
+        .food-text {
+            border: solid 1px black;
+        }
+
+        .foodlist {
+            background-color: rgb(199, 178, 173);    
+            height: 700px;
+        }
+        #drink{
+            background-image: url(img/03_food/04_mint_coffee.png);
+            background-position: bottom right;
+            background-size: 50%;
+            background-repeat: no-repeat;
+        }
+        .drink-text{
+            float: left;
+            padding-top: 25px;
+            padding-left: 50px;
+            padding-right: 80px;
+        }
+        h2{
+            font-weight: bold;
+        }
+        .drinkname{
+            font-size: 16pt;
+            margin-bottom: 10px;
+        }
+
 
 
         /* 連絡我們 */
@@ -281,22 +322,92 @@
                 <div id="foodselect" class="container">
                     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                         <li class="nav-item col-lg-4">
-                            <a class="nav-link active food-title" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">Home</a>
+                            <a class="nav-link active food-tab" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">茶飲</a>
                         </li>
                         <li class="nav-item col-lg-4">
-                            <a class="nav-link food-title" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Profile</a>
+                            <a class="nav-link food-tab" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">簡餐</a>
                         </li>
                         <li class="nav-item col-lg-4">
-                            <a class="nav-link food-title" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">Contact</a>
+                            <a class="nav-link food-tab" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">茶點</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade show active food-text" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div id="drink" class="foodlist">
+                                <div class="drink-text">
+                                    <h2>冰(熱)茶飲</h2>
+                                    <P class="drinkname">錫蘭紅茶</P>
+                                    <p class="drinkname">翡翠綠茶</p>
+                                    <p class="drinkname">凍頂烏龍茶</p>
+                                    <p class="drinkname">高山青茶</p>
+                                    <p class="drinkname">蜂蜜紅茶</p>
+                                    <p class="drinkname">茉香綠茶</p>
+                                    <p class="drinkname">梅凍綠茶</p>
+                                    <p class="drinkname">蘆薈青茶</p>
+                                    <p class="drinkname">梅釀青茶</p>
+                                    <p class="drinkname">普洱茶</p>
+                                    <p class="drinkname">金萱茶</p>
+                                    <p class="drinkname">炭燒鐵觀音</p>
+                                    <p class="drinkname">玄米煎茶</p>
+                                    <p class="drinkname">日式烤茶</p>
+                                    <p class="drinkname">日式蕎麥茶</p>
+                                </div>
+                                <div class="drink-text">
+                                    <h2>鮮奶茶飲品</h2>
+                                    <p class="drinkname">紅茶鮮奶茶</p>
+                                    <p class="drinkname">翡翠鮮奶茶</p>
+                                    <p class="drinkname">茉香鮮奶茶</p>
+                                    <p class="drinkname">抹茶鮮奶茶</p>
+                                    <p class="drinkname">巧克力鮮奶茶</p>
+                                    <p class="drinkname">珍珠鮮奶茶</p>
+                                    <p class="drinkname">冬瓜珍珠鮮奶茶</p>
+                                    <p class="drinkname">黑糖珍珠鮮奶茶</p>
+                                    <p class="drinkname">薑汁鮮奶茶</p>
+                                    <p class="drinkname">普洱鮮奶茶</p>
+                                    <p class="drinkname">金萱鮮奶茶</p>
+                                    <p class="drinkname">鐵觀音鮮奶茶</p>
+                                    <p class="drinkname">烏龍鮮奶茶</p>
+                                    <p class="drinkname">桂烏鮮奶茶</p>
+                                    <p class="drinkname">仙草鮮奶茶</p>
+                                </div>
+                                <div class="drink-text">
+                                    <h2>回沖茶飲</h2>
+                                    <p class="drinkname">明潭紅茶</p>
+                                    <p class="drinkname">碧螺春綠茶</p>
+                                    <p class="drinkname">阿里山烏龍茶</p>
+                                    <p class="drinkname">潽洱茶</p>
+                                    <p class="drinkname">菊花普洱茶</p>
+                                    <p class="drinkname">桂花烏龍茶</p>
+                                    <p class="drinkname">高山金萱茶</p>
+                                    <p class="drinkname">枸杞菊花茶</p>
+                                </div>
+                                <div class="drink-text">
+                                    <h2>咖啡飲品</h2>
+                                    <p class="drinkname">濃縮咖啡</p>
+                                    <p class="drinkname">美式咖啡</p>
+                                    <p class="drinkname">拿鐵咖啡</p>
+                                    <p class="drinkname">卡布奇諾</p>
+                                    <p class="drinkname">焦糖瑪琪朵</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade food-text" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="foodlist">
+                                <div class="drink-text"></div>
+                                <div class="drink-text"></div>
+                                <div class="drink-text"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade food-text" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="foodlist">
+                                <div class="drink-text"></div>
+                                <div class="drink-text"></div>
+                                <div class="drink-text"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
