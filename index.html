@@ -26,8 +26,8 @@
         }
 
         #logosection {
-            width: 380px;
-            float: left;
+            /* width: 380px; */
+            /* float: left; */
         }
 
         #logo {
@@ -48,7 +48,7 @@
             color: #051E08;
         }
 
-        .nav {
+        .navtitle {
             height: 100px;
             padding-left: 40px;
         }
@@ -56,12 +56,60 @@
         .nav-item {
             padding: 19px 10px;
             font-size: 22pt;
-
+        }
+        .titletext{
+            padding: 8px 16;
         }
 
         .nav-link {
             color: rgb(12, 66, 18);
         }
+        
+
+        @media screen and (max-width: 1198px){
+            #logo{
+                width: 130px;
+                height: 80px;
+            }
+            #store_name{
+                font-size: 30pt;
+            }
+            .navtitle{
+                height: 80px;
+            }
+            .nav-item{
+                padding: 19px 4px;
+                font-size: 20pt;
+            }
+            .titletext{
+                padding: 8px 10px;
+            }
+        }
+        @media screen and (max-width: 991px){
+            #logo{
+                width: 120px;
+                height: 70px;
+            }
+            #store_name{
+                font-size: 24pt;
+            }
+            .navtitle{
+                height: 60px;
+                padding-left: 10px;
+            }
+            .nav-item{
+                padding: 19px 0px;
+                font-size: 16pt;
+            }
+            .titletext{
+                padding: 8px 6px;
+            }
+            
+
+
+        }
+
+
 
         /* 整體內容 */
         .text_title {
@@ -123,7 +171,7 @@
             font-size: 22pt;
             text-align: center;
             padding-top: 60px;
-            color: rgb(21, 65, 26)
+            color: rgb(11, 34, 14)
         }
 
         .title02 {
@@ -172,36 +220,97 @@
 
         /* 按下去會變色↓ */
         .nav-tabs .nav-link.active {
-            background-color: rgb(144, 118, 110);
-            color: white;
+            background-color: rgb(246, 230, 174);
+            color: #051E08;
         }
 
         .food-text {
-            border: solid 1px black;
+            /* border: solid 1px rgb(243, 41, 41); */
         }
 
         .foodlist {
-            background-color: rgb(199, 178, 173);    
+            background-color: rgb(240, 233, 212);
             height: 700px;
         }
-        #drink{
+
+        #drink {
             background-image: url(img/03_food/04_mint_coffee.png);
             background-position: bottom right;
             background-size: 50%;
             background-repeat: no-repeat;
         }
-        .drink-text{
+
+        .drink-text {
             float: left;
             padding-top: 25px;
             padding-left: 50px;
             padding-right: 80px;
+            color: #051E08;
         }
-        h2{
+
+        h2 {
             font-weight: bold;
         }
-        .drinkname{
+
+        .drinkname {
             font-size: 16pt;
             margin-bottom: 10px;
+        }
+
+        #meal {
+            background-image: url(img/03_food/05_hotpot.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+
+        .meal-text {
+            writing-mode: vertical-lr;
+            padding-left: 540px;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            color: #051E08;
+        }
+
+        .mealtitle {
+            padding-right: 30px;
+        }
+
+        .mealname {
+            font-size: 20pt;
+            padding-right: 16px;
+        }
+
+        #snack {
+            background-image: url(img/03_food/06_dafu.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+
+        .snack-text {
+            writing-mode: vertical-lr;
+            padding-left: 600px;
+            padding-top: 40px;
+            color: #051E08;
+        }
+        .snack-text01{
+            padding-bottom: 20px;
+        }
+
+        .snacktitle {
+            padding-right: 18px;
+        }
+
+        .snackname {
+            font-size: 20pt;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background-image: linear-gradient(to right, rgba(241, 228, 186, 0), rgba(250, 215, 20, 0.75), rgba(248, 239, 214, 0));
+            width: 50%; 
+            background-position: right;
+            
         }
 
 
@@ -231,18 +340,18 @@
                     <div id="logo"></div>
                     <p id="store_name">流光茶館</p>
                 </div>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#about">流光細語</a>
+                <ul class="nav navtitle">
+                    <li class="nav-item">
+                        <a class="nav-link titletext" href="#about">流光細語</a>
                     </li>
-                    <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#event">茶話趣活</a>
+                    <li class="nav-item ">
+                        <a class="nav-link titletext" href="#event">茶話趣活</a>
                     </li>
-                    <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#food">品茶味食</a>
+                    <li class="nav-item">
+                        <a class="nav-link titletext" href="#food">品茶味食</a>
                     </li>
-                    <li class="nav-item col-lg-3">
-                        <a class="nav-link" href="#contact">連絡我們</a>
+                    <li class="nav-item">
+                        <a class="nav-link titletext" href="#contact">連絡我們</a>
                     </li>
                 </ul>
             </div>
@@ -334,6 +443,7 @@
                                 aria-controls="contact" aria-selected="false">茶點</a>
                         </li>
                     </ul>
+
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active food-text" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div id="drink" class="foodlist">
@@ -395,17 +505,68 @@
                             </div>
                         </div>
                         <div class="tab-pane fade food-text" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="foodlist">
-                                <div class="drink-text"></div>
-                                <div class="drink-text"></div>
-                                <div class="drink-text"></div>
+                            <div id="meal" class="foodlist">
+                                <div class="meal-text">
+                                    <h2 class="mealtitle">鍋物類</h2>
+                                    <p class="mealname">松坂豬肉鍋</p>
+                                    <p class="mealname">風味雞肉鍋</p>
+                                    <p class="mealname">莎朗牛肉鍋</p>
+                                    <p class="mealname">起司牛奶鍋</p>
+                                    <p class="mealname">養生鮮蔬鍋</p>
+                                </div>
+                                <div class="meal-text">
+                                    <h2 class="mealtitle">蓋飯類</h2>
+                                    <p class="mealname">照燒雞肉蓋飯</p>
+                                    <p class="mealname">起司豬排蓋飯</p>
+                                    <p class="mealname">洋蔥燉牛肉蓋飯</p>
+                                    <p class="mealname">蜜汁排骨蓋飯</p>
+                                    <p class="mealname">黃金泡菜蓋飯</p>
+                                </div>
+                                <div class="meal-text">
+                                    <h2 class="mealtitle">麵類</h2>
+                                    <p class="mealname">豚骨叉燒拉麵</p>
+                                    <p class="mealname">味噌蔬菜拉麵</p>
+                                    <p class="mealname">韓式泡菜拉麵</p>
+                                    <p class="mealname">紅燒牛肉麵</p>
+                                    <p class="mealname">嫩雞炒泡麵</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade food-text" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="foodlist">
-                                <div class="drink-text"></div>
-                                <div class="drink-text"></div>
-                                <div class="drink-text"></div>
+                            <div id="snack" class="foodlist">
+                                <div class="snack-text">
+                                    <h2 class="snacktitle">熱食</h2>
+                                    <p class="snackname">炸薯條</p>
+                                    <p class="snackname">炸豆腐</p>
+                                    <p class="snackname">烤麻糬</p>
+                                    <p class="snackname">烤花枝丸</p>
+
+                                </div>
+                                <div class="snack-text snack-text01">
+                                    <h2 class="snacktitle">　</h2>
+                                    <p class="snackname">甜不辣</p>
+                                    <p class="snackname">米血糕</p>
+                                    <p class="snackname">炸鮮菇</p>
+                                    <p class="snackname">滷豆干</p>
+                                </div>
+                                <hr align="right">
+                                <div class="snack-text">
+                                    <h2 class="snacktitle">茶點</h2>
+                                    <p class="snackname">四喜拼盤</p>
+                                    <p class="snackname">大福</p>
+                                    <p class="snackname">和菓子</p>
+                                    <p class="snackname">黑糖糕</p>
+                                    <p class="snackname">薯片</p>
+
+                                </div>
+                                <div class="snack-text">
+                                    <h2 class="snacktitle">　</h2>
+                                    <p class="snackname">肉乾</p>
+                                    <p class="snackname">方塊酥</p>
+                                    <p class="snackname">米果</p>
+                                    <p class="snackname">杏仁瓦片</p>
+                                    <p class="snackname">果乾</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -430,7 +591,9 @@
         <div id="footer"></div>
     </div>
 
+    <script>
 
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
